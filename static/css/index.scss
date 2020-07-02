@@ -1,0 +1,40 @@
+$postions: (
+    'Top',
+    'Bottom',
+    'Left',
+    'Right'
+);
+$padding: 'padding';
+$margin: 'margin';
+
+.width100{
+    width: 100%;
+}
+$i: 1;
+@while $i <=5 {
+    @each $option in $options {
+        .#{$padding}#{$option}#{$i} {
+            padding-top: 1% * $i;
+        }
+        .#{$margin}#{$option}#{$i} {
+            padding-top: 1% * $i;
+        }
+    }
+}
+
+.bgwhitesmoke{
+    background-color: #f1f1f1;
+}
+.bgaquamarine{
+    background-color: rgb(46, 187, 46);
+}
+
+.textbox
+{
+    height:30px;
+    font-size:14pt;
+}
+
+ul{
+    list-style-type: none;
+}
